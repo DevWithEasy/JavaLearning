@@ -30,9 +30,12 @@ public class StringsMethods {
         printStr(upper);
 
         //trim
-
         String trimed = world.trim();
         printStr(trimed);
+
+        //charAt
+        char findChar = hello.charAt(0);
+        System.out.println(findChar);
 
     }
 }
