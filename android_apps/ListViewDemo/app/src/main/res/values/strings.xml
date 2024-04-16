@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">List View Demo</string>
+    <string-array name="fruits">
+        <item>Apple</item>
+        <item>Orange</item>
+        <item>Guava</item>
+        <item>Lemon</item>
+    </string-array>
+</resources>
