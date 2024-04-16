@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">TextView Demo</string>
+    <string name="name_text">Robiul Awal</string>
+    <string name="age_text">27 years age</string>
+</resources>

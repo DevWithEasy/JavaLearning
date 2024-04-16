@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Radio Button Demo</string>
+    <string name="title">Select your Gender</string>
+    <string name="male">Male</string>
+    <string name="female">Female</string>
+    <string name="others">Others</string>
+    <string name="btn_text">Confirm</string>
+</resources>

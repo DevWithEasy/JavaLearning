@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Guessing Game</string>
+    <string name="hint_text">Enter Guess Number (1-5)</string>
+    <string name="btn_text">Guesses</string>
+    <string name="head_text">Guessing Game</string>
+    <string name="toast_text">Please Enter a valid number.</string>
+</resources>
