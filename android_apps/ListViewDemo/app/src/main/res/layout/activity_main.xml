@@ -5,13 +5,20 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
-
-    <ListView
-        android:divider="#2196F3"
-        android:dividerHeight="1dp"
-        android:id="@+id/listViewId"
+    tools:context=".MainActivity"
+    android:paddingTop="24dp"
+    android:orientation="vertical">
+    <TextView
         android:layout_width="match_parent"
-        android:layout_height="match_parent"/>
-
+        android:layout_height="wrap_content"
+        android:text="Fruits List"
+        android:padding="10dp"
+        android:textSize="24sp"
+        android:textAlignment="center"
+        android:background="#2196F3"
+        android:textColor="#fff"/>
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/listViewId"/>
 </LinearLayout>

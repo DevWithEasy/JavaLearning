@@ -1,8 +1,11 @@
 package com.example.listviewdemo;
 
 import android.os.Bundle;
+import android.view.View;
+import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
+import android.widget.Toast;
 
 import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
@@ -19,8 +22,18 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         listView = (ListView) findViewById(R.id.listViewId);
-        String[] fruits = getResources().getStringArray(R.array.fruits);
-        ArrayAdapter<String> adapter = new ArrayAdapter<String>(MainActivity.this,R.layout.country_item,R.id.textViewId,fruits);
+
+        String [] fruits = getResources().getStringArray(R.array.fruits);
+
+        ArrayAdapter<String> adapter = new ArrayAdapter<>(this,R.layout.fruit_item,R.id.item_view,fruits);
         listView.setAdapter(adapter);
+
+        listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+            @Override
+            public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
+                String value = fruits[position];
+                Toast.makeText(MainActivity.this,value,Toast.LENGTH_SHORT).show();
+            }
+        });
     }
 }
