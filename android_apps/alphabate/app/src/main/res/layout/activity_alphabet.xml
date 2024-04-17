@@ -40,7 +40,7 @@
             android:layout_weight="1"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:textSize="40sp"
+            android:textSize="20sp"
             android:textColor="#F44336"
             android:layout_marginBottom="20dp"
             android:id="@+id/e_word_id"/>
@@ -48,7 +48,7 @@
             android:layout_weight="1"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:textSize="40sp"
+            android:textSize="20sp"
             android:textColor="#2196F3"
             android:id="@+id/b_word_id"/>
     </LinearLayout>

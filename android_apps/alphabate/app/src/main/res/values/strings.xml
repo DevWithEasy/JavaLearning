@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">alphabet</string>
+    <string name="app_name">Alphabet</string>
     <string-array name="alphabets_capital">
         <item>A</item>
         <item>B</item>

@@ -55,8 +55,8 @@ public class AlphabetActivity extends AppCompatActivity {
         Bundle bundle = getIntent().getExtras();
 
         if(bundle != null){
-            String value = bundle.getString("tag");
-            int key = (int) Integer.parseInt(value);
+            String value = bundle.getString("key");
+            int key = Integer.parseInt(value);
             imageView.setImageResource(images[key]);
             capitalView.setText(capital_alphabets[key]);
             smallView.setText(small_alphabets[key]);
