@@ -6,6 +6,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.AdapterView;
 import android.widget.ListView;
+import android.widget.SearchView;
 import android.widget.Toast;
 
 import androidx.activity.EdgeToEdge;
@@ -13,6 +14,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 public class MainActivity extends AppCompatActivity {
     private ListView listView;
+    private SearchView searchView;
     private  String[] capital_alphabets,small_alphabets,english_words;
     private int [] images = {R.drawable.a_apple,R.drawable.b_banana,R.drawable.c_corn,R.drawable.d_date_palm,R.drawable.e_eggplant,
             R.drawable.f_fig,R.drawable.g_guava,R.drawable.h_hibiscus,R.drawable.i_ice_cream,R.drawable.j_jackfruit,
@@ -33,6 +35,7 @@ public class MainActivity extends AppCompatActivity {
         // Get the LinearLayout containing your views
         View mainLayout = findViewById(R.id.main);
 
+
         // Set the top margin to the status bar height
         if (mainLayout.getLayoutParams() instanceof ViewGroup.MarginLayoutParams) {
             ViewGroup.MarginLayoutParams params = (ViewGroup.MarginLayoutParams) mainLayout.getLayoutParams();
@@ -42,6 +45,8 @@ public class MainActivity extends AppCompatActivity {
 
 
         listView = (ListView) findViewById(R.id.list_view_id);
+        searchView = (SearchView) findViewById(R.id.search_id);
+
 
         capital_alphabets = getResources().getStringArray(R.array.alphabets_capital);
         small_alphabets = getResources().getStringArray(R.array.alphabets_small);
@@ -60,6 +65,20 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(intent);
             }
         });
+
+        searchView.setOnQueryTextListener(new SearchView.OnQueryTextListener() {
+            @Override
+            public boolean onQueryTextSubmit(String query) {
+                return false;
+            }
+
+            @Override
+            public boolean onQueryTextChange(String newText) {
+
+                return false;
+            }
+        });
+
     }
     // Method to get the height of the status bar
     private int getStatusBarHeight() {

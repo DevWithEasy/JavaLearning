@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">MenuDemon</string>
+    <string name="toolbar_title">Whatsapp</string>
+    <string name="new_group">New Group</string>
+    <string name="new_broadcast">New Broadcast</string>
+    <string name="linked_device">Linked Device</string>
+    <string name="setting">Setting</string>
+</resources>

@@ -17,8 +17,12 @@
         android:textAlignment="center"
         android:background="#2196F3"
         android:textColor="@color/white"
-        android:padding="10dp"
-        android:layout_marginBottom="10dp"/>
+        android:padding="10dp"/>
+    <SearchView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:queryHint="Enter Alphabet"
+        android:id="@+id/search_id"/>
     <ListView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
